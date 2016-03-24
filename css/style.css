@@ -1,0 +1,45 @@
+*,
+html,
+div,
+p {
+    line-height: 24px;
+}
+
+.show-graid [class^=col-] {
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, .3);
+    border: 1px solid #eee;
+}
+
+.show-graid .row {
+    margin: 10px 0;
+}
+
+.span-gap span {
+    margin-right: 10px;
+}
+
+.inline-tags p>mark {
+    display: inline-block;
+    line-height: 1.428em;
+    width: 50px;
+    text-align: right;
+}
+
+.line-gap {
+    border-bottom: 1px dashed;
+    text-align: center;
+    margin: -10px 0 30px;
+}
+
+.line-gap span {
+    position: relative;
+    top: 10px;
+    background-color: #fff; 
+    padding:5px 0;
+}
+
+.control-size .form-control{
+    margin-top: 10px;
+}
+ 
