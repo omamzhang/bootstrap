@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Bootstrap 排版</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <h1 class="h1 text-center page-header"> 辅助类 <small>—排版</small></h1>
+    <div class="container">
+        <!-- <h3 class="h3 text-center  page-header"> 辅助类 —排版 </h3> -->
+        <!-- 排版 -->
+        <table class="table table-hover">
+            <caption class="">排版 常用</caption>
+            <thead>
+                <tr class="table-striped">
+                    <th class="col-md-2 col-lg-1">使用场景</th>
+                    <th class="col-md-6 col-lg-8 text-center">相关类</th>
+                    <th class="col-md-4 cold-lg-3 text-center">备注</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-md-2 col-lg-1">标题</td>
+                    <td class="col-md-6 col-lg-8">
+                        <h1>h1. Title <small>Secondary text</small></h1>
+                        <h2>h2. Title <small>Secondary text</small></h2>
+                        <h3>h3. Title <small>Secondary text</small></h3>
+                        <h4>h4. Title <small>Secondary text</small></h4>
+                        <h5>h5. Title <small>Secondary text</small></h5>
+                        <h6>h6. Title <small>Secondary text</small></h6>
+                    </td>
+                    <td class="col-md-4 col-lg-3"></td>
+                </tr>
+                <tr>
+                    <td class="col-md-2 col-lg-1">中心内容</td>
+                    <td class="col-md-6 col-lg-8">
+                        <p class="lead">page subject is font-size:14px;line-height:1.428em; and paragraph is margin-bottom:10px; By adding the
+                            <mark>.Lead</mark> class can be highlighted by paragraph</p>
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    </td>
+                    <td class="col-md-4 col-lg-3"></td>
+                </tr>
+                <tr class="inline-tags">
+                    <td class="col-md-2 col-lg-1">内联文本 tag</td>
+                    <td class="col-md-6 col-lg-8">
+                        <p>
+                            <mark>mark</mark>: <span>可用mark标签  <mark>高亮显示</mark> 文本.</span></p>
+                        <p>
+                            <mark>del</mark>: 使用del标签表示当文本将被认为已
+                            <del> 删除</del>。</p>
+                        <p>
+                            <mark>s</mark>: 使用s标签表示当前这段文本
+                            <s>不再有效</s>。</p>
+                        <p>
+                            <mark>ins</mark>: 使用ins标签当前文本为额外
+                            <ins>插入</ins>的。</p>
+                        <p>
+                            <mark>u</mark>: 使用u标签当前文本将添加 <u>下划线</u>。</p>
+                        <p>
+                            <mark>small</mark>: 使用small标签或者.small类, <small>文本</small> 为父容器的85%。</p>
+                        <p>
+                            <mark>strong</mark>: 使用strong标签文本将 <strong>加粗</strong> 显示。</p>
+                        <p>
+                            <mark>em</mark>: 使用em标签本文显示为 <em>斜体</em>。</p>
+                    </td>
+                    <td class="col-md-4 col-lg-3"></td>
+                </tr>
+                <tr>
+                    <td class="col-md-2 col-lg-1">缩略语</td>
+                    <td class="col-md-6 col-lg-8">
+                        使用缩略语标签
+                        <mark>abbr</mark>的外观表现为带有较浅的虚线框，鼠标hover状态会变成有“？”的指针，eg：
+                        <p>An abbreviation of the word attribute is
+                            <abbr title="attribute">attr</abbr>.</p>
+                        另外首字母缩写类
+                        <mark>.initialism</mark>字体会变小一些。
+                        <p>
+                            <abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+                    </td>
+                    <td class="col-md-4 col-lg-3"></td>
+                </tr>
+                <tr>
+                    <td class="col-md-2 col-lg-1">引用</td>
+                    <td class="col-md-6 col-lg-8">
+                        命名来源用footer标明，来源名称可以用cite包裹。
+                        <h4>blockquote 方式一：</h4>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer>Someone famous in
+                                <cite title="Source Title">Source Title</cite>
+                            </footer>
+                        </blockquote>
+                        <h4>blockquote 方式二：blockqute-reverse</h4>
+                        <blockquote class="blockquote-reverse">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer>Someone famous in
+                                <cite title="Source Title">Source Title</cite>
+                            </footer>
+                        </blockquote>
+                    </td>
+                    <td class="col-md-4 col-lg-3"></td>
+                </tr>
+                <tr>
+                    <td class="col-md-2 col-lg-1">列表</td>
+                    <td class="col-md-6 col-lg-8">
+                        <h4 class="text-primary">无序列表</h4>
+                        <ul>
+                            <li>列表item</li>
+                            <li>列表item</li>
+                            <li>列表item
+                                <ul>
+                                    <li>子列表item</li>
+                                    <li>子列表item</li>
+                                </ul>
+                            </li>
+                            <li>列表item</li>
+                            <li>列表item</li>
+                        </ul>
+                        <h4 class="text-primary">有序列表</h4>
+                        <ol>
+                            <li>列表item</li>
+                            <li>列表item</li>
+                            <li>列表item</li>
+                        </ol>
+                        <h4 class="text-primary">无样式列表 <small>.list-unstyled 只对当前列表有效，不作用于子列表</small></h4>
+                        <ul class="list-unstyled">
+                            <li>列表item</li>
+                            <li>列表item
+                                <ul>
+                                    <li>子列表item</li>
+                                    <li>子列表item</li>
+                                </ul>
+                            </li>
+                            <li>列表item</li>
+                        </ul>
+                        <h4 class="text-primary">内联列表 <small>.list-inline</small></h4>
+                        <ul class="list-inline">
+                            <li>列表item</li>
+                            <li>列表item</li>
+                            <li>列表item</li>
+                        </ul>
+                        <h4 class="text-primary">定义列表 --默认表示</h4>
+                        <dl>
+                            <dt>计算机</dt>
+                            <dd>用来计算的仪器 ... ...</dd>
+                            <dt>显示器</dt>
+                            <dd>以视觉方式显示信息的装置 ... ...</dd>
+                        </dl>
+                        <h4 class="text-primary">定义列表 --水平表示 <small>.dl-horizontal</small></h4>
+                        <dl class="dl-horizontal">
+                            <dt>计算机</dt>
+                            <dd>用来计算的仪器 ... ...</dd>
+                            <dt>显示器</dt>
+                            <dd>以视觉方式显示信息的装置 ... ...</dd>
+                        </dl>
+                    </td>
+                    <td class="col-md-4 col-lg-3"></td>
+                </tr>
+                <tr>
+                    <td class="col-md-2 col-lg-1"></td>
+                    <td class="col-md-6 col-lg-8"></td>
+                    <td class="col-md-4 col-lg-3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="lib/jquery-2.2.1.js" type="text/javascript"></script>
+</body>
+
+</html>
